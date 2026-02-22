@@ -38,40 +38,78 @@
     </script>
   </head>
 
-  <body class="min-h-screen bg-[#f4f6f8] font-geist">
+  <body class="min-h-screen bg-[#FFFFFF] font-geist">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-      <h1 class="text-2xl font-bold text-[#002C5C] mb-6">
+      <h1 class="text-3xl font-bold text-[#002C5C] mb-6">
         Job Application Tracker
       </h1>
       <div class="grid grid-cols-3 max-[540px]:grid-cols-1 gap-4 mb-8">
         <div class="bg-white rounded-xl shadow-card px-6 py-5">
           <p
-            class="text-[11px] font-semibold text-gray-400 tracking-widest uppercase mb-2"
+            class="text-[14px] font-medium text-[#323B49] tracking-widest uppercase mb-2"
           >
             Total
           </p>
-          <p class="text-4xl font-bold text-gray-900" id="count-total">0</p>
+          <p class="text-2xl font-bold text-gray-900" id="count-total">0</p>
         </div>
 
         <div class="bg-white rounded-xl shadow-card px-6 py-5">
           <p
-            class="text-[11px] font-semibold text-gray-400 tracking-widest uppercase mb-2"
+            class="text-[14px] font-medium text-[#323B49] tracking-widest uppercase mb-2"
           >
             Interview
           </p>
-          <p class="text-4xl font-bold text-emerald-500" id="count-interview">
+          <p class="text-2xl font-bold text-emerald-500" id="count-interview">
             0
           </p>
         </div>
 
         <div class="bg-white rounded-xl shadow-card px-6 py-5">
           <p
-            class="text-[11px] font-semibold text-gray-400 tracking-widest uppercase mb-2"
+            class="text-[14px] font-medium text-[#323B49] tracking-widest uppercase mb-2"
           >
             Rejected
           </p>
-          <p class="text-4xl font-bold text-red-400" id="count-rejected">0</p>
+          <p class="text-2xl font-bold text-red-400" id="count-rejected">0</p>
         </div>
+      </div>
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-[20px] font-semibold text-[#002C5C]">Available Jobs</h2>
+        <span class="text-sm text-gray-400 font-medium" id="jobs-badge"></span>
+      </div>
+      <div class="flex gap-1 mb-5 rounded-xl shadow-card p-1 w-fit">
+        <button
+          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          data-tab="all"
+        >
+          All
+          <span
+            class="ml-1 text-xs px-2 py-0.5 rounded-full"
+            id="tab-count-all"
+          ></span>
+        </button>
+
+        <button
+          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          data-tab="interview"
+        >
+          Interview
+          <span
+            class="ml-1 text-xs px-2 py-0.5 rounded-full"
+            id="tab-count-interview"
+          ></span>
+        </button>
+
+        <button
+          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          data-tab="rejected"
+        >
+          Rejected
+          <span
+            class="ml-1 text-xs px-2 py-0.5 rounded-full"
+            id="tab-count-rejected"
+          ></span>
+        </button>
       </div>
     </div>
   </body>
