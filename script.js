@@ -218,20 +218,22 @@ function render() {
 </button>
       </div>
 
-      <div class="flex flex-wrap gap-2 text-xs mb-3">
-        <span class="text-gray-500">${job.location}</span>
-        <span class="px-2 py-0.5 rounded-full font-bold ${chip}">
-          ${job.type}
-        </span>
-        <span class="font-semibold text-gray-600">${job.salary}</span>
-      </div>
+      <div class="flex items-center text-sm text-[#64748B] mb-3">
+  <span>${job.location}</span>
+
+  <span class="mx-2 text-[#64748B]">•</span>
+  <span class="font-medium text-[#64748B]">${job.type}</span>
+
+  <span class="mx-2 text-[#64748B]">•</span>
+  <span class="font-medium text-[#64748B]">${job.salary}</span>
+</div>
 
       <div class="inline-flex items-center px-2.5 py-1 rounded-md
             text-[10.5px] font-bold tracking-wider mb-3 ${badge.cls}">
   ${badge.label}
 </div>
 
-      <p class="text-sm text-gray-500 mb-4">${job.description}</p>
+      <p class="text-sm text-[#323B49] mb-4">${job.description}</p>
 
       <div class="flex gap-2 flex-wrap">
         <button data-action="interview" data-id="${job.id}"
