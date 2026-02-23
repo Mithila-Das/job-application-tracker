@@ -50,7 +50,7 @@
           >
             Total
           </p>
-          <p class="text-2xl font-bold text-gray-900" id="count-total">0</p>
+          <p class="text-2xl font-bold text-[#002C5C]" id="count-total">0</p>
         </div>
 
         <div class="bg-white rounded-xl shadow-card px-6 py-5">
@@ -59,7 +59,7 @@
           >
             Interview
           </p>
-          <p class="text-2xl font-bold text-emerald-500" id="count-interview">
+          <p class="text-2xl font-bold text-[#10B981]" id="count-interview">
             0
           </p>
         </div>
@@ -70,45 +70,33 @@
           >
             Rejected
           </p>
-          <p class="text-2xl font-bold text-red-400" id="count-rejected">0</p>
+          <p class="text-2xl font-bold text-[#EF4444]" id="count-rejected">0</p>
         </div>
       </div>
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-[20px] font-semibold text-[#002C5C]">Available Jobs</h2>
         <span class="text-sm text-gray-400 font-medium" id="jobs-badge"></span>
       </div>
-      <div class="flex gap-1 mb-5 rounded-xl shadow-card p-1 w-fit">
+      <div class="flex gap-3 mb-5">
         <button
-          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          class="tab-btn px-5 py-2 rounded-lg text-sm font-semibold transition"
           data-tab="all"
         >
           All
-          <span
-            class="ml-1 text-xs px-2 py-0.5 rounded-full"
-            id="tab-count-all"
-          ></span>
         </button>
 
         <button
-          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          class="tab-btn px-5 py-2 rounded-lg text-sm font-semibold transition"
           data-tab="interview"
         >
           Interview
-          <span
-            class="ml-1 text-xs px-2 py-0.5 rounded-full"
-            id="tab-count-interview"
-          ></span>
         </button>
 
         <button
-          class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition"
+          class="tab-btn px-5 py-2 rounded-lg text-sm font-semibold transition"
           data-tab="rejected"
         >
           Rejected
-          <span
-            class="ml-1 text-xs px-2 py-0.5 rounded-full"
-            id="tab-count-rejected"
-          ></span>
         </button>
       </div>
       <div id="cards-list" class="flex flex-col gap-4"></div>
