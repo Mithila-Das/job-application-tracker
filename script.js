@@ -197,7 +197,7 @@ function render() {
         </div>
         <button data-delete="${job.id}"
   class="w-8 h-8 flex items-center justify-center rounded-lg
-         border border-gray-200 text-gray-400"
+         border border-gray-400 text-gray-500"
   title="Delete job">
 
   <svg xmlns="http://www.w3.org/2000/svg"
